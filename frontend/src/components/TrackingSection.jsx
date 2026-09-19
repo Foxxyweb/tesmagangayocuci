@@ -49,7 +49,7 @@ export default function TrackingSection() {
           </div>
           <h2 className="text-headline-md section-title">Status Cucian Anda</h2>
           <p className="text-body-md text-muted section-subtitle" style={{ margin: '0 auto' }}>
-            Masukkan kode tracking yang diterima saat pemesanan (format: AC-XXXX).
+            Masukkan kode tracking yang diterima saat pemesanan (format: ORD-XXXXXX).
           </p>
         </div>
 
@@ -59,9 +59,9 @@ export default function TrackingSection() {
             id="tracking-code-input"
             type="text"
             className="tracking-input"
-            placeholder="AC-XXXX"
+            placeholder="ORD-XXXXXX"
             value={code}
-            maxLength={7}
+            maxLength={12}
             onChange={(e) => { setCode(e.target.value); setError(null); }}
           />
           <button type="submit" id="btn-track-order" className="btn btn-primary"
