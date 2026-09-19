@@ -146,6 +146,17 @@ app.post('/api/booking', async (req, res) => {
   } catch (e) { res.status(500).json({ success: false, message: 'Error server' }); }
 });
 
+app.get('/api/orders/track/:code', async (req, res) => {
+  try {
+    const order = await prisma.order.findUnique({
+      where: { order_code: req.params.code },
+      include: { service: { select: { name: true, price: true, unit: true } } }
+    });
+    if (!order) return res.status(404).json({ success: false, message: 'Pesanan tidak ditemukan' });
+    res.json({ success: true, data: order });
+  } catch (e) { res.status(500).json({ success: false, message: 'Error server' }); }
+});
+
 app.post('/api/orders', authenticate, async (req, res) => {
   try {
     const { customer_name, phone, service_id, weight_qty, total_price, payment_status } = req.body;
