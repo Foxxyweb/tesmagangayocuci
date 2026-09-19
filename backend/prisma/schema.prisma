@@ -1,0 +1,77 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         Int      @id @default(autoincrement())
+  name       String
+  email      String?  @unique
+  phone      String   @unique
+  password   String
+  role       String   @default("KASIR") // OWNER, KASIR
+  is_active  Boolean  @default(true)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  
+  orders     Order[]
+
+  @@map("users")
+}
+
+model Customer {
+  id         Int      @id @default(autoincrement())
+  name       String
+  phone      String   @unique
+  address    String?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  orders     Order[]
+
+  @@map("customers")
+}
+
+model Service {
+  id     Int     @id @default(autoincrement())
+  name   String
+  price  Float
+  unit   String
+  desc   String?
+  
+  orders Order[]
+
+  @@map("services")
+}
+
+model Order {
+  id            Int      @id @default(autoincrement())
+  order_code    String   @unique
+  customer_id   Int?
+  user_id       Int?     
+  service_id    Int
+  
+  customer_name String?
+  phone         String?
+  address       String?
+  
+  weight_qty    Float    @default(1.0)
+  total_price   Float    @default(0.0)
+  
+  pickup_date   DateTime?
+  status        String   @default("Pending") 
+  payment_status String  @default("Belum Lunas") 
+  
+  created_at    DateTime @default(now())
+  updated_at    DateTime @updatedAt
+
+  customer      Customer? @relation(fields: [customer_id], references: [id])
+  user          User?     @relation(fields: [user_id], references: [id])
+  service       Service   @relation(fields: [service_id], references: [id])
+
+  @@map("orders")
+}

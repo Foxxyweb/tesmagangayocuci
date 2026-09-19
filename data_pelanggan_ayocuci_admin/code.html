@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#d8e3fb","inverse-surface":"#263143","tertiary-container":"#008378","surface-container-low":"#f0f3ff","surface-tint":"#a73a00","on-primary-container":"#fffbff","on-secondary-container":"#79490b","primary":"#a33900","on-surface-variant":"#5a4138","surface-variant":"#d8e3fb","tertiary":"#00685f","primary-container":"#cc4900","surface-container-lowest":"#ffffff","secondary":"#855316","on-tertiary":"#ffffff","surface-container":"#e7eeff","surface-bright":"#f9f9ff","on-tertiary-container":"#f4fffc","secondary-fixed-dim":"#fcb973","secondary-container":"#ffbc76","error":"#ba1a1a","background":"#f9f9ff","outline-variant":"#e2bfb2","on-primary-fixed-variant":"#7f2b00","on-secondary-fixed-variant":"#683c00","on-primary-fixed":"#370e00","on-tertiary-fixed":"#00201d","surface":"#f9f9ff","error-container":"#ffdad6","on-error":"#ffffff","on-tertiary-fixed-variant":"#005049","outline":"#8e7166","on-secondary":"#ffffff","inverse-on-surface":"#ecf1ff","surface-container-high":"#dee8ff","on-primary":"#ffffff","on-background":"#111c2d","primary-fixed":"#ffdbce","on-secondary-fixed":"#2c1600","on-surface":"#111c2d","secondary-fixed":"#ffdcbd","tertiary-fixed-dim":"#6bd8cb","inverse-primary":"#ffb599","tertiary-fixed":"#89f5e7","surface-dim":"#cfdaf2","on-error-container":"#93000a","primary-fixed-dim":"#ffb599"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"margin":"2rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-sm":"0.5rem","space-xl":"2.5rem","gutter":"1.5rem","space-lg":"1.5rem","space-md":"1rem","margin-mobile":"1.25rem"},"fontFamily":{"display-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"display-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"display":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased"><aside class="fixed left-0 top-0 bottom-0 w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-md mb-space-xl"><div class="w-10 h-10 rounded-DEFAULT bg-primary flex items-center justify-center text-on-primary shadow-[0_10px_20px_-5px_rgba(234,88,12,0.4)]"><span class="material-symbols-outlined text-[24px]">local_laundry_service</span></div><div><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold block">AyoCuci</span><span class="font-label-md text-label-md text-on-surface-variant font-medium tracking-wide uppercase">POS &amp; Manajemen</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_10px_20px_-5px_rgba(234,88,12,0.3)]"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span class="font-label-lg text-label-lg">Ringkasan</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="transaksi-antrian" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-lg text-label-lg">Transaksi &amp; Antrian</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT transition-all bg-primary-container text-on-primary-container font-semibold shadow-[0_10px_20px_-5px_rgba(234,88,12,0.3)]" data-path="data-pelanggan" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Data Pelanggan</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="layanan-tarif" href="#"><span class="material-symbols-outlined text-[20px]">dry_cleaning</span><span class="font-label-lg text-label-lg">Layanan &amp; Tarif</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="staf-kasir" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Staf Kasir</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="laporan-finansial" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-label-lg text-label-lg">Laporan Finansial</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="pengaturan-outlet" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="font-label-lg text-label-lg">Pengaturan Outlet</span></a></nav></div><div class="p-space-lg bg-surface-container-low flex flex-col gap-space-md"><div class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-lowest shadow-[0_4px_6px_-1px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">store</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface-variant">Outlet Aktif</span><span class="font-label-lg text-label-lg text-on-surface font-semibold truncate max-w-[130px]">Cabang Kemang 01</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-label-lg text-label-lg font-bold">BS</div><div class="flex flex-col"><span class="font-label-lg text-label-lg text-on-surface font-semibold">Budi Santoso</span><span class="font-label-md text-label-md text-on-surface-variant">Supervisor Kasir</span></div></div><a class="p-space-xs rounded-full text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-colors" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-2xl"><div class="hidden md:flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="text-primary font-semibold">Cabang Kemang 01</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-medium">POS Admin</span></div><div class="relative flex-1 max-w-md"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full pl-10 pr-space-md py-1.5 rounded-full bg-surface-container text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary/20 font-body-md text-body-md transition-all" placeholder="Cari nota, pelanggan, atau pakaian..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-space-md py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-md text-label-md font-semibold"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>Shift Siang • 08:00 - 16:00</div><button class="flex items-center gap-space-xs px-space-lg py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_10px_20px_-5px_rgba(234,88,12,0.4)] hover:bg-primary-container transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Pesanan Baru</span></button><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen p-space-xl"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Direktori Mitra &amp; Konsumen</span>
+</div>
+<h1 class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">Data Pelanggan</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Database kontak pelanggan, riwayat cucian, saldo deposit, dan loyalitas member.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-[0_2px_4px_rgba(0,0,0,0.02)] hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">upload_file</span>
+<span>Import CSV</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-[0_2px_4px_rgba(0,0,0,0.02)] hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">campaign</span>
+<span>Broadcast Promo</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_10px_20px_-5px_rgba(234,88,12,0.35)] hover:scale-[1.02] active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Tambah Pelanggan</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-[0_4px_12px_rgba(0,0,0,0.02)] flex items-start justify-between relative overflow-hidden group">
+<div class="flex flex-col gap-space-xs z-10">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium uppercase tracking-wide">Total Terdaftar</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">428</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Orang</span>
+</div>
+<div class="flex items-center gap-1 mt-1 text-tertiary font-label-md text-label-md font-medium">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+18 bulan ini</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[24px]">groups</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-primary/5 pointer-events-none"></div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-[0_4px_12px_rgba(0,0,0,0.02)] flex items-start justify-between relative overflow-hidden group">
+<div class="flex flex-col gap-space-xs z-10">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium uppercase tracking-wide">Pelanggan Aktif (30 Hari)</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">312</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Orang</span>
+</div>
+<div class="flex items-center gap-1 mt-1 text-secondary font-label-md text-label-md font-medium">
+<span class="material-symbols-outlined text-[16px]">repeat</span>
+<span>78% Repeat order</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-secondary/5 pointer-events-none"></div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-[0_4px_12px_rgba(0,0,0,0.02)] flex items-start justify-between relative overflow-hidden group">
+<div class="flex flex-col gap-space-xs z-10">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium uppercase tracking-wide">Total Saldo Deposit</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Rp 3.850.000</span>
+</div>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">account_balance_wallet</span>
+<span>42 Member bayar muka</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-all">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-tertiary/5 pointer-events-none"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex-1 flex flex-col md:flex-row items-center gap-space-md">
+<div class="relative w-full md:w-96">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-10 pr-space-md py-2 rounded-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="custSearch" placeholder="Cari nama, WhatsApp, atau alamat..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-1 overflow-x-auto w-full md:w-auto pb-1 md:pb-0">
+<button class="px-space-md py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-medium transition-colors" type="button">Semua (428)</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-colors" type="button">VIP (34)</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-colors" type="button">Langganan Kiloan (186)</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-colors" type="button">Jarang Transaksi (48)</button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end xl:self-auto">
+<span class="font-label-md text-label-md text-on-surface-variant">Urutan:</span>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md px-space-md py-2 pr-8 rounded-full focus:outline-none cursor-pointer">
+<option>Terakhir Berkunjung</option>
+<option>Transaksi Terbanyak</option>
+<option>Nama (A - Z)</option>
+<option>Saldo Tertinggi</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<div class="xl:col-span-8 bg-surface-container-lowest rounded-DEFAULT shadow-[0_4px_16px_rgba(0,0,0,0.03)] overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/70 text-on-surface-variant font-label-md text-label-md">
+<th class="py-space-md px-space-lg font-semibold">Pelanggan</th>
+<th class="py-space-md px-space-md font-semibold">Kontak WA</th>
+<th class="py-space-md px-space-md font-semibold">Total &amp; Volume</th>
+<th class="py-space-md px-space-md font-semibold">Saldo Deposit</th>
+<th class="py-space-md px-space-md font-semibold">Terakhir</th>
+<th class="py-space-md px-space-md font-semibold">Status</th>
+<th class="py-space-md px-space-lg font-semibold text-right">Aksi Cepat</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low/50 transition-colors cursor-pointer group" onclick="selectCustomer('Siti Rahmawati', '0812-8891-2309', 'Member VIP', 'Rp 450.000', '48x Transaksi • 210 Kg', 'Lavender Softener', 'Hindari pengering suhu terlalu tinggi untuk sutra &amp; jilbab', 'Jl. Bangka Raya No. 12, Mampang, Jaksel', 'SR', 'bg-primary/10 text-primary')">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-label-lg text-label-lg font-bold">SR</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface group-hover:text-primary transition-colors">Siti Rahmawati</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Gabung: 12 Jan 2024</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md text-on-surface">0812-8891-2309</span>
+<a class="p-1 rounded-full text-tertiary hover:bg-tertiary-container/15 transition-colors" href="https://wa.me/6281288912309" target="_blank" title="Kirim Pesan WhatsApp">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">48x Cucian</span>
+<span class="font-label-md text-label-md text-on-surface-variant">210 Kg total</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-lg text-label-lg font-bold text-tertiary">Rp 450.000</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md text-on-surface">Kemarin</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md font-semibold inline-block">VIP</span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Buat Order Baru" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="Riwayat Nota" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors cursor-pointer group" onclick="selectCustomer('Hendro Gunawan', '0857-1122-9900', 'Member Tetap', 'Rp 120.000', '26x Transaksi • 118 Kg', 'Ocean Fresh Extra', 'Semua kemeja wajib gantung (hanger) berlabel nama', 'Jl. Kemang Timur IX No. 4A', 'HG', 'bg-secondary/10 text-secondary')">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-label-lg text-label-lg font-bold">HG</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface group-hover:text-primary transition-colors">Hendro Gunawan</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Gabung: 04 Mar 2024</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md text-on-surface">0857-1122-9900</span>
+<a class="p-1 rounded-full text-tertiary hover:bg-tertiary-container/15 transition-colors" href="https://wa.me/6285711229900" target="_blank" title="Kirim Pesan WhatsApp">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">26x Cucian</span>
+<span class="font-label-md text-label-md text-on-surface-variant">118 Kg total</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Rp 120.000</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md text-on-surface">3 hari lalu</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold inline-block">Member Tetap</span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Buat Order Baru" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="Riwayat Nota" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors cursor-pointer group" onclick="selectCustomer('Dina Maharani', '0813-7762-5544', 'Pelanggan Baru', 'Non-Deposit', '2x Transaksi • 9 Kg', 'Floral Sweet Clean', 'Alergi pewangi berbahan sulfur tajam', 'Apartemen Kemang Village Tower E-12', 'DM', 'bg-surface-container-high text-on-surface')">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-lg text-label-lg font-bold">DM</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface group-hover:text-primary transition-colors">Dina Maharani</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Gabung: 28 Okt 2024</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md text-on-surface">0813-7762-5544</span>
+<a class="p-1 rounded-full text-tertiary hover:bg-tertiary-container/15 transition-colors" href="https://wa.me/6281377625544" target="_blank" title="Kirim Pesan WhatsApp">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">2x Cucian</span>
+<span class="font-label-md text-label-md text-on-surface-variant">9 Kg total</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-medium">Non-Deposit</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md text-on-surface">5 hari lalu</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold inline-block">Pelanggan Baru</span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Buat Order Baru" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="Riwayat Nota" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors cursor-pointer group" onclick="selectCustomer('Rian Pratama', '0819-3344-7711', 'Member VIP', 'Rp 820.000', '64x Transaksi • 340 Kg', 'Lavender Pure (No Softener)', 'Sepatu kulit &amp; jas hanya wet clean lembut', 'Jl. Bangka Raya No. 45, Jaksel', 'RP', 'bg-primary/10 text-primary')">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-label-lg text-label-lg font-bold">RP</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface group-hover:text-primary transition-colors">Rian Pratama</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Gabung: 15 Des 2023</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md text-on-surface">0819-3344-7711</span>
+<a class="p-1 rounded-full text-tertiary hover:bg-tertiary-container/15 transition-colors" href="https://wa.me/6281933447711" target="_blank" title="Kirim Pesan WhatsApp">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">64x Cucian</span>
+<span class="font-label-md text-label-md text-on-surface-variant">340 Kg total</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-lg text-label-lg font-bold text-tertiary">Rp 820.000</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md text-on-surface">1 minggu lalu</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md font-semibold inline-block">VIP</span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Buat Order Baru" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="Riwayat Nota" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors cursor-pointer group" onclick="selectCustomer('Anisa Tri Lestari', '0878-5544-2219', 'Member Tetap', 'Rp 35.000', '18x Transaksi • 82 Kg', 'Downy Passion Style', 'Pisahkan cucian putih dan warna pastel', 'Jl. Bangka II Gang Langgar No. 8', 'AT', 'bg-secondary/10 text-secondary')">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-label-lg text-label-lg font-bold">AT</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface group-hover:text-primary transition-colors">Anisa Tri Lestari</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Gabung: 19 Feb 2024</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md text-on-surface">0878-5544-2219</span>
+<a class="p-1 rounded-full text-tertiary hover:bg-tertiary-container/15 transition-colors" href="https://wa.me/6287855442219" target="_blank" title="Kirim Pesan WhatsApp">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">18x Cucian</span>
+<span class="font-label-md text-label-md text-on-surface-variant">82 Kg total</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Rp 35.000</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-body-md text-body-md text-on-surface">2 minggu lalu</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold inline-block">Member Tetap</span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Buat Order Baru" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="Riwayat Nota" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-md bg-surface-container-low/40 flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<span>Menampilkan 1 - 5 dari 428 pelanggan</span>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container-lowest text-on-surface shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:bg-surface-container disabled:opacity-40" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-full flex items-center justify-center bg-primary text-on-primary font-bold" type="button">1</button>
+<button class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container-lowest text-on-surface shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:bg-surface-container" type="button">2</button>
+<button class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container-lowest text-on-surface shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:bg-surface-container" type="button">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container-lowest text-on-surface shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:bg-surface-container" type="button">86</button>
+<button class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container-lowest text-on-surface shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<div class="xl:col-span-4 bg-surface-container-lowest rounded-DEFAULT shadow-[0_4px_16px_rgba(0,0,0,0.03)] p-space-lg flex flex-col gap-space-lg sticky top-20">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Profil Pelanggan</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md font-bold" id="previewTag">Member VIP</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-[0_4px_12px_rgba(0,0,0,0.04)]" id="previewAvatar">SR</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate" id="previewName">Siti Rahmawati</span>
+<span class="font-body-md text-body-md text-on-surface-variant" id="previewPhone">0812-8891-2309</span>
+<span class="font-label-md text-label-md text-tertiary flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Terverifikasi WhatsApp
+          </span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Saldo Koin / Deposit</span>
+<span class="font-title-md text-title-md font-bold text-tertiary mt-1" id="previewDeposit">Rp 450.000</span>
+<button class="text-left font-label-md text-label-md text-primary font-semibold mt-2 hover:underline" type="button">+ Top Up Deposit</button>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Riwayat Cucian</span>
+<span class="font-title-md text-title-md font-bold text-on-surface mt-1" id="previewStats">48 Order</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-2">210 Kg Total Cuci</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Alamat Drop Point &amp; Antar</span>
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low/60 flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant shrink-0 mt-0.5">location_on</span>
+<span class="font-body-md text-body-md leading-snug" id="previewAddress">Jl. Bangka Raya No. 12, Mampang, Jaksel</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-DEFAULT">
+<span class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+          Preferensi Khusus Laundry
+        </span>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-body-md font-body-md">
+<span class="text-on-surface-variant font-label-md text-label-md">Pilihan Parfum:</span>
+<span class="font-semibold text-on-surface" id="previewPerfume">Lavender Softener</span>
+</div>
+<div class="flex flex-col gap-0.5 mt-1 pt-2 border-t border-surface-container">
+<span class="text-on-surface-variant font-label-md text-label-md">Catatan &amp; Instruksi Staf:</span>
+<p class="font-body-md text-body-md text-on-surface italic bg-surface-container-lowest p-space-sm rounded-DEFAULT" id="previewNotes">"Hindari pengering suhu terlalu tinggi untuk sutra &amp; jilbab"</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_10px_20px_-5px_rgba(234,88,12,0.3)] hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Buat Pesanan Laundry</span>
+</button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span>Riwayat Nota</span>
+</button>
+<a class="py-2 rounded-full bg-tertiary-container/15 text-tertiary font-label-md text-label-md font-semibold hover:bg-tertiary-container/25 transition-colors flex items-center justify-center gap-1" href="https://wa.me/6281288912309" id="previewWaBtn" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Chat WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function selectCustomer(name, phone, tag, deposit, stats, perfume, notes, address, initials, colorClass) {
+    document.getElementById('previewName').innerText = name;
+    document.getElementById('previewPhone').innerText = phone;
+    document.getElementById('previewTag').innerText = tag;
+    document.getElementById('previewDeposit').innerText = deposit;
+    document.getElementById('previewStats').innerText = stats.split('•')[0].trim();
+    document.getElementById('previewPerfume').innerText = perfume;
+    document.getElementById('previewNotes').innerText = '"' + notes + '"';
+    document.getElementById('previewAddress').innerText = address;
+    
+    var avatarEl = document.getElementById('previewAvatar');
+    avatarEl.innerText = initials;
+    avatarEl.className = 'w-14 h-14 rounded-full flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-[0_4px_12px_rgba(0,0,0,0.04)] ' + colorClass;
+
+    var cleanNum = phone.replace(/[^0-9]/g, '');
+    if (cleanNum.startsWith('0')) cleanNum = '62' + cleanNum.substring(1);
+    document.getElementById('previewWaBtn').href = 'https://wa.me/' + cleanNum;
+  }
+</script></main></div></body></html>
