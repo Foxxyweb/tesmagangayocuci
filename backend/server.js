@@ -77,6 +77,14 @@ app.get('/api/admin/stats', authenticate, async (req, res) => {
   } catch (e) { res.status(500).json({ success: false, message: 'Error server' }); }
 });
 
+// --- SERVICES (PUBLIC) ---
+app.get('/api/services', async (req, res) => {
+  try {
+    const services = await prisma.service.findMany({ orderBy: { id: 'asc' } });
+    res.json({ success: true, data: services });
+  } catch (e) { res.status(500).json({ success: false, message: 'Error server' }); }
+});
+
 // --- CUSTOMERS ---
 app.get('/api/customers', authenticate, async (req, res) => {
   try {
