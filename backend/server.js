@@ -122,6 +122,30 @@ app.put('/api/staff/:id/toggle', authenticate, ownerOnly, async (req, res) => {
 });
 
 // --- ORDERS ---
+app.post('/api/booking', async (req, res) => {
+  try {
+    const { customer_name, phone, address, service_id, pickup_date } = req.body;
+    let cust = await prisma.customer.findFirst({ where: { phone } });
+    if (!cust) {
+      cust = await prisma.customer.create({ data: { name: customer_name, phone, address: address || '' } });
+    }
+    const order = await prisma.order.create({
+      data: {
+        order_code: 'ORD-' + Date.now().toString().slice(-6),
+        customer_name,
+        phone,
+        service_id: parseInt(service_id) || 1,
+        weight_qty: 1, // Default untuk booking
+        total_price: 0, // Akan dihitung nanti oleh kasir
+        status: 'Antrian',
+        payment_status: 'Belum Lunas',
+        user_id: null // Booking publik tidak punya user_id kasir
+      }
+    });
+    res.json({ success: true, data: order });
+  } catch (e) { res.status(500).json({ success: false, message: 'Error server' }); }
+});
+
 app.post('/api/orders', authenticate, async (req, res) => {
   try {
     const { customer_name, phone, service_id, weight_qty, total_price, payment_status } = req.body;
